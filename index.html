@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Photo Slideshow</title>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header>
+<h1>My Photo Slideshow</h1>
+</header>
+
+
+<main>
+<div id="slideshow" class="slideshow">
+<div class="slides" id="slides"></div>
+<button id="prev" aria-label="Previous">⟨</button>
+<button id="next" aria-label="Next">⟩</button>
+</div>
+
+
+<div class="controls">
+<button id="play">Play</button>
+<button id="pause">Pause</button>
+<label>
+Interval (s):
+<input id="interval" type="number" min="1" step="1" value="4" />
+</label>
+</div>
+</main>
+
+
+<footer>
+<p>Powered by GitHub Pages · Images auto‑imported from email</p>
+</footer>
+
+
+<script>
+// Set these to your public repo (owner/name) that hosts this site
+window.GHPAGES_REPO_OWNER = "YOUR_GITHUB_USERNAME";
+window.GHPAGES_REPO_NAME = "YOUR_REPO_NAME";
+// Optional: if your images live in a subfolder, adjust IMAGES_DIR
+window.IMAGES_DIR = "images";
+</script>
+<script src="assets/slideshow.js"></script>
+</body>
+</html>
