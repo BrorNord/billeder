@@ -1,0 +1,15 @@
+:root { --bg:#0b0d10; --fg:#e8eef2; --muted:#9aa6b2; }
+*{ box-sizing:border-box; }
+body{ margin:0; font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--fg); background:linear-gradient(180deg,#0b0d10,#10141a); }
+header, footer{ text-align:center; padding:1rem; color:var(--muted); }
+h1{ margin:0.2rem 0 0.5rem; color:var(--fg); font-weight:700; }
+main{ max-width:960px; margin:0 auto; padding:1rem; }
+.slideshow{ position:relative; width:100%; aspect-ratio:16/9; background:#11161c; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.slides{ height:100%; display:flex; transition:transform 600ms ease; }
+.slides img{ width:100%; height:100%; object-fit:contain; background:#0e1319; }
+#prev,#next{ position:absolute; top:50%; transform:translateY(-50%); border:none; font-size:2rem; background:rgba(0,0,0,.35); color:#fff; padding:.4rem .7rem; cursor:pointer; border-radius:12px; backdrop-filter: blur(4px); }
+#prev{ left:.6rem; } #next{ right:.6rem; }
+.controls{ display:flex; gap:.5rem; align-items:center; justify-content:center; margin:1rem 0; }
+.controls button, .controls input{ padding:.5rem .75rem; border-radius:10px; border:1px solid #263042; background:#121923; color:var(--fg); }
+.controls button{ cursor:pointer; }
+@media (max-width:640px){ .slideshow{ aspect-ratio:4/3; } }
